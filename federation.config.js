@@ -8,13 +8,13 @@ const localRemotes = {
 
 const deployedRemotes = {
 	productListingApp:
-		process.env.PRODUCT_LISTING_REMOTE_URL || 'https://ecom-mfe-product-listing.vercel.app/remoteEntry.js',
+		process.env.PRODUCT_LISTING_REMOTE_URL || 'https://ecom-mfe-product-listing-v2.vercel.app/remoteEntry.js',
 	productDetailsApp:
-		process.env.PRODUCT_DETAILS_REMOTE_URL || 'https://ecom-mfe-product-details.vercel.app/remoteEntry.js',
-	cartApp: process.env.CART_REMOTE_URL || 'https://ecom-mfe-cart.vercel.app/remoteEntry.js',
-	checkoutApp: process.env.CHECKOUT_REMOTE_URL || 'https://ecom-mfe-checkout.vercel.app/remoteEntry.js',
+		process.env.PRODUCT_DETAILS_REMOTE_URL || 'https://ecom-mfe-product-details-v2.vercel.app/remoteEntry.js',
+	cartApp: process.env.CART_REMOTE_URL || 'https://ecom-mfe-cart-v2.vercel.app/remoteEntry.js',
+	checkoutApp: process.env.CHECKOUT_REMOTE_URL || 'https://ecom-mfe-checkout-v2.vercel.app/remoteEntry.js',
 	userProfileApp:
-		process.env.USER_PROFILE_REMOTE_URL || 'https://ecom-mfe-user-profile.vercel.app/remoteEntry.js',
+		process.env.USER_PROFILE_REMOTE_URL || 'https://ecom-mfe-user-profile-v2.vercel.app/remoteEntry.js',
 };
 
 const localOrigins = Object.values(localRemotes).map((url) => new URL(url).origin + '/');
