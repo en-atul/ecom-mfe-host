@@ -1,0 +1,14 @@
+{
+	"extends": "@ecom-mfe/typescript-config/reactjs.json",
+	"compilerOptions": {
+		"outDir": "dist",
+		"baseUrl": "src",
+		"noCheck": true
+	},
+	"include": [
+		"src/**/*"
+	],
+	"exclude": [
+		"node_modules"
+	]
+}
